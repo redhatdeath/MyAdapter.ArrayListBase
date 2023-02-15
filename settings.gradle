@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "My Adapter"
+rootProject.name = "ArrayList Base Adapter"
 include ':Presentation'
 include ':Domain'
 include ':Data'
