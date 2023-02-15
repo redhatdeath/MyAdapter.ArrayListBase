@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'ru.shanin.data'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 33
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '33.0.2'
+}
+
+dependencies {
+    // LiveData
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    // Local Modules
+    implementation project(path: ':Domain')
+}
