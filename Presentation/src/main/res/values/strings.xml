@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Adapter</string>
+    <string name="app_name">ArrayList Base Adapter</string>
     <string name="add_10">Add 10</string>
     <string name="profile_photo"> profile_photo </string>
     <string name="first_name_hint"> Input first name </string>
